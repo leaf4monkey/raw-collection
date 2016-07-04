@@ -1,6 +1,6 @@
 Package.describe({
     name: 'leaf4monkey:raw-collection',
-    version: '0.0.6',
+    version: '0.0.7',
     // Brief, one-line summary of the package.
     summary: 'expose some methods from mongo driver.',
     // URL to the Git repository containing the source code for this package.
@@ -16,9 +16,8 @@ Package.onUse(function (api) {
         'ecmascript',
         'underscore',
         'random',
-        'mongo',
-        'minimongo'
-    ], ['server']);
+        'mongo'
+    ]);
     api.addFiles('raw-collection.js', ['server']);
     api.export('registerRawCollectionMethods', ['server']);
 });
