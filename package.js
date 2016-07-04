@@ -1,6 +1,6 @@
 Package.describe({
     name: 'leaf4monkey:raw-collection',
-    version: '0.0.8',
+    version: '0.0.9',
     // Brief, one-line summary of the package.
     summary: 'expose some methods from mongo driver.',
     // URL to the Git repository containing the source code for this package.
