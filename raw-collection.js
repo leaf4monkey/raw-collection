@@ -2,6 +2,7 @@
 
 // Variables exported by this module can be imported by other packages and
 // applications. See raw-collection-tests.js for an example of importing.
+let {Mongo} = Package.mongo;
 let c = new Mongo.Collection(Random.id());
 let rawCollection = c.rawCollection();
 let methods = [];
