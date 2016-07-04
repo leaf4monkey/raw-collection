@@ -11,9 +11,6 @@ var register = function (method, rawMethod) {
 };
 
 (function () {
-    if (Meteor.isClient) {
-        return;
-    }
     var c = new Mongo.Collection(Random.id());
     var rawCollection = c.rawCollection();
     var methods = [];
