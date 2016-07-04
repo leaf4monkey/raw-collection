@@ -31,7 +31,7 @@ var register = function (method, rawMethod) {
     console.log('registered methods:', registeredMethods, 'for Mongo.Collection.');
 }());
 
-registerRawCollectionMethods = Meteor.isServer && function (extensions) {
+registerRawCollectionMethods = function (extensions) {
     if (!extensions || !extensions.length) {
         return;
     }
