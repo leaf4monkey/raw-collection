@@ -17,7 +17,7 @@ let register = function (method, rawMethod) {
     Mongo.Collection.prototype[method] = function (...args) {
         let coll = this.rawCollection();
         return wrapAsync(coll[rawMethod].bind(coll))(...args);
-    }
+    };
 };
 methods.forEach(function (method) {
     if (Mongo.Collection.prototype[method]) {
